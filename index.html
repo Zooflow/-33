@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>:3</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cookie&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style>
+      .bg-stripes {
+        background: repeating-linear-gradient(
+          0deg,
+          #ffd6e7 0,
+          #ffd6e7 20px,
+          #ffc1d9 20px,
+          #ffc1d9 40px
+        );
+      }
+
+      .torn-paper {
+        clip-path: polygon(
+          0% 0%,
+          100% 0%,
+          100% 8%,
+          97% 12%,
+          100% 16%,
+          98% 22%,
+          100% 28%,
+          97% 34%,
+          100% 40%,
+          98% 46%,
+          100% 52%,
+          97% 58%,
+          100% 64%,
+          98% 70%,
+          100% 76%,
+          97% 82%,
+          100% 88%,
+          95% 94%,
+          100% 100%,
+          0% 100%,
+          0% 94%,
+          3% 88%,
+          0% 82%,
+          2% 76%,
+          0% 70%,
+          3% 64%,
+          0% 58%,
+          2% 52%,
+          0% 46%,
+          3% 40%,
+          0% 34%,
+          2% 28%,
+          0% 22%,
+          3% 16%,
+          0% 12%,
+          2% 8%
+        );
+      }
+
+      #letter {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 0.5s ease-in-out;
+      }
+      #letter.show {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      #envelope {
+        transition: all 0.5s ease-in-out;
+      }
+      #envelope.hide {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+
+      @keyframes heartbeat {
+        0% {
+          transform: scale(1);
+        }
+        25% {
+          transform: scale(1.1);
+        }
+        40% {
+          transform: scale(1);
+        }
+        60% {
+          transform: scale(1.1);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+      .animate-heartbeat {
+        animation: heartbeat 5s ease-in-out infinite;
+      }
+    </style>
+  </head>
+  <body class="bg-stripes min-h-screen relative overflow-hidden">
+    <div
+      id="envelope"
+      class="relative bg-white torn-paper max-w-xl w-full p-8 shadow-2xl flex flex-col items-center justify-center cursor-pointer z-10 mx-auto my-[300px]"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="w-20 h-20 text-pink-500 animate-heartbeat"
+        fill="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 
+             2 5.74 4.01 4 6.5 4c1.54 0 3.04.99 3.57 2.36h.86
+             C14.46 4.99 15.96 4 17.5 4 19.99 4 22 5.74 22 8.5
+             c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+        />
+      </svg>
+      <p class="mt-4 text-xl font-semibold text-pink-600">
+        Dame click mi vida
+      </p>
+    </div>
+
+    <div
+      id="letter"
+      class="absolute inset-0 p-4 overflow-y-auto"
+    >
+      <div class="relative bg-white torn-paper max-w-xl w-full p-8 shadow-2xl mx-auto">
+        <div class="absolute top-4 right-4 text-pink-500">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-8 h-8"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 
+                 8.5 2 5.74 4.01 4 6.5 4c1.54 0 3.04.99 
+                 3.57 2.36h.86C14.46 4.99 15.96 4 17.5 
+                 4 19.99 4 22 5.74 22 8.5c0 3.78-3.4 6.86-8.55 
+                 11.54L12 21.35z"
+            />
+          </svg>
+        </div>
+
+        <h1
+          style="font-family: 'Cookie', cursive;"
+          class="text-7xl font-bold text-pink-600 text-center mb-6"
+        >
+          Ik houd van jou
+        </h1>
+
+        <div class="text-gray-800 leading-relaxed space-y-4">
+          <p>
+            Amor, yo te quiero y sabes que ya soy otro Marcos, no el que
+            conociste al principio, puede que con el mismo tonto humor y siendo
+            igual de molestoso, si lo deseas puedo dejar de ser muy molestoso,
+            igualmente te molestaría porque te quiero y quiero de tu atención, no
+            quiero perderte, eres lo que más me importa en esta vida, cometí
+            demasiados errores en el pasado que de verdad nunca volvería a
+            cometer.
+          </p>
+          <p>
+            Cada día, hora, minuto y segundo me arrepiento de mis acciones,
+            estoy tratando de ser una mejor pareja para ti, alguien con quien
+            puedas hablar de cualquier tontera, alguien con quien tengas ganas de
+            reír, de besar, de acariciar, de tocar, que sientas seguridad en mí.
+            Quiero volver a tenerte en mis brazos pero no temporalmente, ojalá
+            hasta la muerte, no quiero que esto sea algo efímero.
+          </p>
+          <p>
+            Te he hecho sufrir mucho y lo reconozco, me enseñaste que el perdón solo
+            servía para el que lo recibía y es verdad, con un perdón el dolor no se
+            va, por eso intento siempre demostrarte mi amor, con palabras y
+            acciones, no quiero hacer promesas falsas, por esto te pido que me
+            ayudes a prometer algo que recordemos los dos, algo que sirva, estoy
+            intentando trabajar en mis defectos, esto de equivocarme me ha servido
+            pero de mala forma, es como aprender a martillar pero pegándole al
+            dedo en vez del clavo al principio, luego vas aprendiendo, aunque parece
+            que me pego demasiadas veces en el dedo para llegar a este punto y que
+            mi cerebro realice que no me amas y que no te gusto, porque esto me
+            confunde, algunas veces me dices bonito pero luego feo.
+          </p>
+          <p>
+            Quiero ser el compañero de tu vida, como el principito y el zorro, yo
+            sería el zorro y tener ese lazo irrompible, quiero que entre los dos
+            manejemos nuestras inseguridades, contárnoslas, aprender de ellas, solo
+            no quiero llegar a ser la rosa.
+          </p>
+          <p>
+            Espero que entiendas que mi amor por ti es firme, como el diamante
+            también como el deseo de arreglar mis errores. Te amo y te quiero con
+            todo mi ser, me gustas desde la cabeza hasta los pies, física y
+            mentalmente, espero que podamos pasar esta tormenta juntos para luego
+            llegar a días soleados, esto puede sonar tonto pero como en Los Juegos
+            del Hambre.
+          </p>
+          <p>
+            Espero juntos poder construir un futuro, donde todos nuestros
+            deseos se cumplan, en ti encontré el significado de "Hogar", hace
+            muchísimo que no te lo recuerdo pero sigues dándome mucha paz, el
+            sábado incluso casi me quedé dormido mientras tú veías TikToks porque
+            me siento muy tranquilo a tu lado. Eres mi inspiración para ser la
+            mejor versión de mí mismo, perdón si te pasé a llevar desde el
+            principio de la relación, pero no quiero que dudes de mi amor hacia
+            ti, nunca, sé que no merezco el cariño que me das por lo horrible que
+            fui, no quiero seguir así de mal, no quiero que a los dos días de
+            reconciliarnos estemos a punto de romper nuestra relación nuevamente,
+            cada vez me duele más, puede que eso te guste por la rabia que aún me
+            tienes.
+          </p>
+          <p class="font-semibold">
+            Nunca me cansaré de repetírtelo, te amo y te amo muchísimo mi osita,
+            espero que si quieras algún día tener esas cosas que nos dijimos para
+            el futuro conmigo.
+          </p>
+          <p class="italic font-cursive text-sm">
+            - Marcos
+          </p>
+        </div>
+
+        <div class="flex justify-center mt-6 w-16">
+            <svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--noto" preserveAspectRatio="xMidYMid meet" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M63.29 9.93c14.92.22 16.4 3.61 20.77 3.73c6.32.18 15.98-11.97 29.07-.99c12.9 10.82 2.39 27.8 2.39 27.8s7.18 12.72 8.02 32.1c.61 14.03-4.79 31.49-29 41.39c-22.29 9.12-55.55 7.3-75.88-8.31C2.9 93.56 4.01 75.92 4.44 69.91c1.13-15.77 8.02-28.44 8.02-28.44s-10.19-20.15 2.25-29.7c13.66-10.49 23.38 1.86 29 1.41c4.09-.34 5.43-3.46 19.58-3.25z" fill="#855b52"></path><path d="M35.98 20.77c-.19-1.11-7.43-8.29-14.92-.99c-5.77 5.63 0 15.42.99 14.64c.76-.6 3.56-4.21 6.83-7.32c3.35-3.19 7.17-5.9 7.1-6.33z" fill="#b99277"></path><path d="M92.5 20.84c-.05.62 3.81 2.95 7.32 6.26c3.55 3.35 6.75 7.67 7.32 7.6c1.13-.14 5.98-9.64-.35-14.99s-14.15-.7-14.29 1.13z" fill="#b99277"></path><path d="M64.51 60.38c14.64 0 23.42 16.52 22.9 26.84c-.47 9.39-5.82 17.18-23.84 17.08c-18.02-.09-22.59-8.36-22.9-17.18c-.28-7.88 5.35-26.74 23.84-26.74z" fill="#f2a258"></path><path d="M92.92 59.7c.33 4.16-1.9 7.95-6.17 7.63c-4.12-.32-7.13-3.66-7.13-7.84s2.22-7.14 5.56-7.6c4.08-.57 7.27 1.9 7.74 7.81z" fill="#171716"></path><path d="M74.55 76.99c-.34 4.16-3.1 8.61-11.12 8.33c-6.73-.24-9.9-4.72-10-8.89c-.14-5.89 3-8.06 10.61-8.17c8.68-.11 10.98 3.01 10.51 8.73z" fill="#2f3030"></path><path d="M48.37 61.25c-.43 4.15-4.33 7.06-7.98 6.17c-4.01-.98-5.81-5.2-4.97-9.29c.75-3.66 3.96-6.51 7.6-6.1c3.8.42 5.89 3.99 5.35 9.22z" fill="#171716"></path><path d="M63.99 95.04c5.49 0 8.49-3.03 9.34-3.87s1.99-2.28 3.75-.84c1.5 1.22.02 3.12-.66 3.85c-1.22 1.31-4.9 5.31-12.93 4.95c-7.88-.35-10.91-3.92-11.76-4.76c-.84-.84-2.25-3-.66-4.22c1.91-1.46 2.53.19 4.5 1.78s3.21 3.11 8.42 3.11z" fill="#2f3030"></path></g></svg>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.getElementById("envelope").addEventListener("click", function () {
+        const envelope = document.getElementById("envelope");
+        const letter = document.getElementById("letter");
+        envelope.classList.add("hide");
+        setTimeout(() => {
+          envelope.style.display = "none";
+          letter.classList.add("show");
+          document.body.classList.remove("overflow-hidden");
+        }, 500);
+      });
+    </script>
+  </body>
+</html>
